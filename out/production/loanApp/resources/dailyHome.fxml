@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.SeparatorMenuItem?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+
+<AnchorPane fx:id="coperativeAnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="498.0" prefWidth="621.0" stylesheets="@../stylesheets/menu_bar.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.CoperativeHomeController">
+   <children>
+      <HBox fx:id="horizontalBox" prefHeight="27.0" prefWidth="600.0" stylesheets="@../stylesheets/menu_bar.css" AnchorPane.bottomAnchor="456.4" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.5">
+         <children>
+            <MenuBar fx:id="menuBar" prefHeight="26.0" prefWidth="602.0" HBox.hgrow="ALWAYS">
+              <menus>
+                <Menu mnemonicParsing="false" text="File">
+                  <items>
+                        <Menu mnemonicParsing="false" text="New">
+                          <items>
+                            <MenuItem fx:id="newUser" mnemonicParsing="false" onAction="#addUser" text="User" />
+                              <MenuItem fx:id="newAccount" mnemonicParsing="false" onAction="#addAccount" text="Account" />
+                          </items>
+                        </Menu>
+                        <Menu mnemonicParsing="false" text="Open Recent">
+                           <items>
+                              <MenuItem mnemonicParsing="false" text="file1" />
+                           </items>
+                        </Menu>
+                        <SeparatorMenuItem mnemonicParsing="false" />
+                        <MenuItem mnemonicParsing="false" text="Settings" />
+                        <SeparatorMenuItem mnemonicParsing="false" />
+                        <MenuItem mnemonicParsing="false" text="Print" />
+                        <SeparatorMenuItem mnemonicParsing="false" />
+                        <MenuItem mnemonicParsing="false" text="Exit" />
+                  </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Edit">
+                  <items>
+                    <MenuItem mnemonicParsing="false" text="Undo" />
+                        <MenuItem mnemonicParsing="false" text="Redo" />
+                        <SeparatorMenuItem mnemonicParsing="false" />
+                        <MenuItem mnemonicParsing="false" text="User" />
+                        <MenuItem mnemonicParsing="false" text="Account" />
+                  </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="View">
+                  <items>
+                        <Menu mnemonicParsing="false" text="Users">
+                          <items>
+                            <MenuItem mnemonicParsing="false" text="User" />
+                              <MenuItem mnemonicParsing="false" onAction="#allUsersAction" text="All Users" />
+                          </items>
+                        </Menu>
+                        <SeparatorMenuItem mnemonicParsing="false" />
+                        <Menu mnemonicParsing="false" text="Accounts">
+                           <items>
+                              <MenuItem mnemonicParsing="false" text="Account" />
+                              <MenuItem fx:id="allAccounts" mnemonicParsing="false" onAction="#allAccountsAction" text="All Accounts" />
+                           </items>
+                        </Menu>
+                  </items>
+                </Menu>
+                  <Menu mnemonicParsing="false" text="Transaction">
+                     <items>
+                        <MenuItem mnemonicParsing="false" onAction="#depositMenuAction" text="Deposit" />
+                        <MenuItem mnemonicParsing="false" text="Repay" />
+                     </items>
+                  </Menu>
+                  <Menu mnemonicParsing="false" text="Loan">
+                     <items>
+                        <MenuItem mnemonicParsing="false" text="Request" />
+                        <MenuItem mnemonicParsing="false" text="Check Approval" />
+                     </items>
+                  </Menu>
+                  <Menu mnemonicParsing="false" text="Help">
+                     <items>
+                        <MenuItem mnemonicParsing="false" text="Loans Help" />
+                        <MenuItem mnemonicParsing="false" text="About System" />
+                     </items>
+                  </Menu>
+              </menus>
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+            </MenuBar>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

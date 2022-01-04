@@ -1,0 +1,17 @@
+.menu-bar {
+    -fx-background-color: derive( #33a3a3,20%);
+    -fx-font-size: 14pt;
+    -fx-font-family: "sans-serif";
+    -fx-text-fill: green;
+    -fx-opacity: 0.9;
+}
+
+.menu-item .label{
+    -fx-text-fill: white;
+}
+.menu-item{
+    -fx-background-color: #33a3a3;
+}
+.menu-item:focused {
+    -fx-background-color: #33a3a3;
+}

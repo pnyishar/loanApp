@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="500.0" prefWidth="520.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.RegisterUserController">
+   <children>
+      <AnchorPane prefHeight="82.0" prefWidth="520.0" style="-fx-background-color: #33a3a3;">
+         <children>
+            <ImageView fitHeight="42.0" fitWidth="69.0" layoutX="32.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/register.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="99.0" layoutY="27.0" text="USER REGISTRATION" textFill="#faf8f8">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Label layoutX="29.0" layoutY="121.0" text="Firstname">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <TextField fx:id="firstnameField" layoutX="144.0" layoutY="117.0" prefHeight="26.0" prefWidth="302.0" />
+      <Label layoutX="29.0" layoutY="161.0" text="Lastname">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <TextField fx:id="lastnameField" layoutX="144.0" layoutY="157.0" prefHeight="26.0" prefWidth="302.0" />
+      <Label layoutX="27.0" layoutY="201.0" text="Email">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <TextField fx:id="emailField" layoutX="145.0" layoutY="197.0" prefHeight="26.0" prefWidth="302.0" />
+      <Label layoutX="29.0" layoutY="241.0" text="Username">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <TextField fx:id="usernameField" layoutX="146.0" layoutY="237.0" prefHeight="26.0" prefWidth="302.0" />
+      <Label layoutX="28.0" layoutY="277.0" text="Password">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="27.0" layoutY="322.0" text="Confirm Password">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="29.0" layoutY="358.0" text="User Type">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <ChoiceBox fx:id="choseUserType" layoutX="146.0" layoutY="355.0" prefHeight="26.0" prefWidth="302.0" />
+      <Button fx:id="regSubmitButton" layoutX="146.0" layoutY="413.0" mnemonicParsing="false" onAction="#regSubmitButtonAction" prefHeight="34.0" prefWidth="112.0" style="-fx-background-color: #33a3a3;" text="Submit" textFill="#fafafa">
+         <font>
+            <Font name="Arial Black" size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="closeButton" layoutX="334.0" layoutY="413.0" mnemonicParsing="false" onAction="#closeButtonAction" prefHeight="34.0" prefWidth="112.0" style="-fx-background-color: #eb2323;" text="Close" textFill="#fafafa">
+         <font>
+            <Font name="Arial Black" size="14.0" />
+         </font>
+      </Button>
+      <Label fx:id="regMessageLabel" alignment="CENTER" layoutY="90.0" prefHeight="19.0" prefWidth="520.0" textFill="#0f0ee5">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="confirmPasswordLabel" alignment="CENTER" layoutX="14.0" layoutY="299.0" prefHeight="19.0" prefWidth="520.0" textFill="#e50517">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <PasswordField fx:id="setPasswordField" layoutX="145.0" layoutY="274.0" prefHeight="26.0" prefWidth="302.0" />
+      <PasswordField fx:id="confirmPasswordField" layoutX="145.0" layoutY="318.0" prefHeight="26.0" prefWidth="302.0" />
+   </children>
+</AnchorPane>
